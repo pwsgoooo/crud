@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>write_board</title>
+  </head>
+  <body>
+    <h1>Wellcome!</h1>
+
+    <h3>Data Upstream Downloader API</h3>
+
+    <table id="board" style="border:1px dashed #333">
+      <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>content</th>
+        <th>
+          <button>Save</button>
+        </th>
+      </tr>
+      <form method="post" action="window.location.href='./board_view.html'">
+        <tr>
+          <td>
+            <input type="text" name="id" />
+          </td>
+          <td>
+            <input type="text" name="name" />
+          </td>
+          <td>
+            <input type="text" name="content" />
+          </td>
+          <td>
+            <input type="submit" value="내가 쓴 글 업로드" />
+          </td>
+        </tr>
+      </form>
+
+      <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>content</td>
+        <td>
+          <button>Edit</button>
+          <button>Delete</button>
+        </td>
+      </tr>
+    </table>
+</html>
