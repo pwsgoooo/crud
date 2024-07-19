@@ -69,13 +69,13 @@
         <form method="post" action="/board">
           <tr>
             <td>
-              <input type="text" name="id" />
+              <input type="text" name="id" required />
             </td>
             <td>
-              <input type="text" name="name" />
+              <input type="text" name="name" required />
             </td>
             <td>
-              <input type="text" name="content" />
+              <input type="text" name="content" required />
             </td>
             <td>
               <input type="submit" value="Save" id="btn_submit" class="btn" />
@@ -99,5 +99,10 @@
         {% endfor %}
       </table>
     </div>
+    {% if msg %}
+    <script>
+      alert("{{msg}}");
+    </script>
+    {% endif %}
   </body>
 </html>
